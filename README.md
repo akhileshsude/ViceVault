@@ -20,7 +20,7 @@ ViceVault is a modern web-based game library where users can explore, discover, 
   
 🛠 Tech Stack
 
-Frontend: HTML, CSS, JavaScript
+Frontend: HTML, CSS, JavaScript, React
 
 Styling: Modern UI design
 
