@@ -22,8 +22,10 @@ ViceVault is a modern web-based game library where users can explore, discover, 
 
 Frontend: HTML, CSS, JavaScript
 
+Styling: Modern UI design
+
 API: RAWG Video Games Database API
 
-Styling: Modern UI design
+API link: https://api.rawg.io/api/games?key=7fc40e914db9485596c468af96ed4907
 
 Hosting: https://vicevault.vercel.app/
