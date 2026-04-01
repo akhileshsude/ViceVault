@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-  height: 40px;
+  height: 100%;
   border-bottom: 4px solid #6e171e;
   display: flex;
   justify-content: space-between;
@@ -55,14 +55,15 @@ nav {
 
 
 #header {
+  width: 100% ;
   text-align: center;
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-top: 180px;
+  margin-top: 170px;
 }
 #Logo {
-  height: 390px;
+  height: 50vh;
   animation: bounceIn 1s ease;
 }
 
@@ -120,8 +121,27 @@ nav {
   transition: transform 0.3s ease;
 }
 
-
-
+#search-bar {
+  width: 300px;
+  height: 30px;
+  background-color: rgba(193, 193, 193, 0.741);
+  color: #5b0e14;
+  border-radius: 15px;
+  border: 2px solid #5b0e14;
+}
+#wishlist {
+  height: 30px;
+  width: 100px;
+  margin: 5px;
+  text-decoration: none;
+  background-color: #6e171e;
+  color: #efe093;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 25px;
+align-content: center;
+text-align: center;
+}
 
 
 #games-grid{
@@ -129,6 +149,8 @@ nav {
   grid-template-columns: 1fr 1fr 1fr;
   gap:5px;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
 
 }
@@ -167,4 +189,67 @@ nav {
   justify-content: center;
   align-items: center;
   height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #header {
+    margin-top: 60px;
+  }
+  #log {
+  color: #6e171e;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+  #games-grid {
+    grid-template-columns: 1fr;
+  }
+  .game-card {
+    width: 90vw;
+    height: auto;
+  }
+
+  #login,
+  #signup {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  #getstarted > a {
+    font-size: 18px;
+  }
+  #Logo {
+  height: 30vh;
+  width: 100vw;
+  animation: bounceIn 1s ease;
+}
+#content {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
 }
