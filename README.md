@@ -22,6 +22,6 @@ Styling: Modern UI design
 
 API: RAWG Video Games Database API
 
-API link: https://api.rawg.io/api/games?key=7fc40e914db9485596c468af96ed4907
+API link: https://api.rawg.io/api/games?key=68a0332c24494c5d9367221d470f397b
 
 Hosting: https://vice-vault.vercel.app/
