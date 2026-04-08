@@ -15,15 +15,38 @@
   <body>
     <nav>
       <div>
-        <a href="../index.html"
-          ><img
+        <a href="../index.html"><img
             id="logo"
             src="./content/Screenshot 2026-03-26 at 01.05.48.png"
-            alt="logo"
-        /></a>
-        
+            alt="logo"/></a>
       </div>
       <input type="text" id="search-bar" placeholder="Search for games..." />
+
+
+      <select name="sort" id="sort">
+        <option value="default">Sort By</option>
+        <optgroup label="Name">
+          <option value="ascending">A-Z</option>
+          <option value="descending">Z-A</option>
+        </optgroup>
+        <optgroup label="Rating">
+          <option value="highest">Highest Rated</option>
+          <option value="lowest">Lowest Rated</option>
+        </optgroup>
+        <optgroup label="Release Date">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+        </optgroup>
+      </select>
+      <select name="genre" id="genre">
+        <option value="default">Genre</option>
+        <option value="ascending">Action</option>
+        <option value="ascending">Adventure</option>
+        <option value="ascending">Puzzle</option>
+        <option value="descending">RPG</option>
+        <option value="highest">Shooter</option>
+      </select>
+
       <a href="" id="wishlist"> Wishlist</a>
     </nav>
     <div id="games-grid"></div>

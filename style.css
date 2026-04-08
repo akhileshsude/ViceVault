@@ -12,7 +12,9 @@
 
 
 body {
-  background-color: #efe093;
+  /* background-color: #efe093; */
+  background-image: url('src/content/Gemini_Generated_Image_k3grbvk3grbvk3gr.png');
+  background-size: repeat;
 }
 
 nav {
@@ -21,6 +23,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+  background-color: #efe093;
+
 }
 #logo {
   height: 40px;
@@ -60,7 +64,7 @@ nav {
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-top: 170px;
+  margin-top: 17vh;
 }
 #Logo {
   height: 50vh;
@@ -162,6 +166,8 @@ text-align: center;
   text-align: center;
   overflow: hidden;
   line-height: 2px;
+  background-color: #efe093;
+
 }
 .game-card img {
   width: 100%;
@@ -191,7 +197,14 @@ text-align: center;
   height: 30px;
 }
 
-
+select{
+  background-color: #6e171e;
+  color: #efe093;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin: 4px;
+}
 
 
 
