@@ -5,29 +5,40 @@ const fetchGames = async (url) => {
   const res = await fetch(url);
   let { results, next } = await res.json();
   nextpage = next;
-  if (document.getElementById("sort").value === "ascending") {
+  if (document.getElementById("sort").value === "default") {
+    document.getElementById("games-grid").innerHTML = "";
+  } else if (document.getElementById("sort").value === "ascending") {
     document.getElementById("games-grid").innerHTML = "";
     results = results.sort((a, b) => a.name.localeCompare(b.name));
   } else if (document.getElementById("sort").value === "descending") {
     document.getElementById("games-grid").innerHTML = "";
-
     results = results.sort((a, b) => b.name.localeCompare(a.name));
   } else if (document.getElementById("sort").value === "highest") {
     document.getElementById("games-grid").innerHTML = "";
-
     results = results.sort((a, b) => b.rating - a.rating);
   } else if (document.getElementById("sort").value === "lowest") {
     document.getElementById("games-grid").innerHTML = "";
-
     results = results.sort((a, b) => a.rating - b.rating);
-  }else if (document.getElementById("sort").value === "newest") {
+  } else if (document.getElementById("sort").value === "newest") {
     document.getElementById("games-grid").innerHTML = "";
 
-    results = results.sort((a, b) => new Date(b.released) - new Date(a.released));
-  }else if (document.getElementById("sort").value === "oldest") {
+    results = results.sort(
+      (a, b) => new Date(b.released) - new Date(a.released),
+    );
+  } else if (document.getElementById("sort").value === "oldest") {
     document.getElementById("games-grid").innerHTML = "";
 
-    results = results.sort((a, b) => new Date(a.released) - new Date(b.released));
+    results = results.sort(
+      (a, b) => new Date(a.released) - new Date(b.released),
+    );
+  }
+
+  if (document.getElementById("search-bar").value) {
+    results = results.filter((game) =>
+      game.name
+        .toLowerCase()
+        .includes(document.getElementById("search-bar").value.toLowerCase()),
+    );
   }
 
   // console.log(results[0]);
@@ -47,12 +58,16 @@ const fetchGames = async (url) => {
   });
 };
 
-  let sort = document.getElementById("sort");
-  sort.addEventListener("change", () => {
-    console.log(sort.value);
-    fetchGames(pg);
-  });
+let sort = document.getElementById("sort");
+sort.addEventListener("change", () => {
+  // console.log(sort.value);
+  fetchGames(pg);
+});
 
+let search = document.getElementById("search-bar");
+search.addEventListener("input", () => {
+  fetchGames(pg);
+});
 
 fetchGames(pg);
 

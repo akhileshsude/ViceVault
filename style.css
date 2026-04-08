@@ -12,16 +12,24 @@
 
 
 body {
-  /* background-color: #efe093; */
+  background-color: #efe093;
+  
+  padding: 0px;
+  margin: 0px;
+}
+#homepagebody {
+  background-color: #efe093;
   background-image: url('src/content/Gemini_Generated_Image_k3grbvk3grbvk3gr.png');
   background-size: repeat;
 }
 
 nav {
+  margin: 0px;
   height: 100%;
   border-bottom: 4px solid #6e171e;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   background-color: #efe093;
 
@@ -149,13 +157,13 @@ text-align: center;
 
 
 #games-grid{
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap:5px;
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
+  align-content: center;
+  /* margin-left: 10px; */
 
 }
 .game-card {
@@ -167,9 +175,11 @@ text-align: center;
   overflow: hidden;
   line-height: 2px;
   background-color: #efe093;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 .game-card img {
+  justify-content: center;
   width: 100%;
   height: 76%;
 
@@ -203,7 +213,6 @@ select{
   border-radius: 20px;
   text-align: center;
   font-weight: bold;
-  margin: 4px;
 }
 
 
