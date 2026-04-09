@@ -1,58 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomePage</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Rubik+Glitch&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body id="homepagebody">
-    <nav>
-      <div>
-        <a href="../index.html"><img
-            id="logo"
-            src="./content/Screenshot 2026-03-26 at 01.05.48.png"
-            alt="logo"/></a>
-      </div>
-      <input type="text" id="search-bar" placeholder="Search for games..." />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomePage</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Rubik+Glitch&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body id="homepagebody">
+  <nav>
+    <div>
+      <a href="../index.html"><img id="logo" src="./content/Screenshot 2026-03-26 at 01.05.48.png" alt="logo" /></a>
+    </div>
+    <input type="text" id="search-bar" placeholder="Search for games..." />
 
 
-      <select name="sort" id="sort">
-        <option value="default">Sort By</option>
-        <optgroup label="Name">
-          <option value="ascending">A-Z</option>
-          <option value="descending">Z-A</option>
-        </optgroup>
-        <optgroup label="Rating">
-          <option value="highest">Highest Rated</option>
-          <option value="lowest">Lowest Rated</option>
-        </optgroup>
-        <optgroup label="Release Date">
-          <option value="newest">Newest</option>
-          <option value="oldest">Oldest</option>
-        </optgroup>
-      </select>
-      <select name="genre" id="genre">
-        <option value="default">Genre</option>
-        <option value="ascending">Action</option>
-        <option value="ascending">Adventure</option>
-        <option value="ascending">Puzzle</option>
-        <option value="descending">RPG</option>
-        <option value="highest">Shooter</option>
-      </select>
+    <select name="sort" id="sort">
+      <option value="default">Sort By</option>
+      <optgroup label="Name">
+        <option value="ascending">A-Z</option>
+        <option value="descending">Z-A</option>
+      </optgroup>
+      <optgroup label="Rating">
+        <option value="highest">Highest Rated</option>
+        <option value="lowest">Lowest Rated</option>
+      </optgroup>
+      <optgroup label="Release Date">
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+      </optgroup>
+    </select>
+    <select name="genre" id="genre">
+      <option value="default">Genre</option>
+      <option value="ascending">Action</option>
+      <option value="ascending">Adventure</option>
+      <option value="ascending">Puzzle</option>
+      <option value="descending">RPG</option>
+      <option value="highest">Shooter</option>
+    </select>
 
-      <a href="" id="wishlist"> Wishlist</a>
-    </nav>
-    <div id="games-grid"></div>
+    <a href="" id="wishlist"> Wishlist</a>
+  </nav>
+  <div id="games-grid"></div>
 
-    <div id="loading"></div>
 
-    <script src="../script.js"></script>
-  </body>
-</html>
+  <script src="../script.js"></script>
+</body>
+
+  </html>
